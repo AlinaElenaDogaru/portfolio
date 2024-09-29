@@ -3,12 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+
+      <header>
+        <div class="navigation">
+          <p>Alina Dogaru</p>
+        <nav>
+          <a href="#about" id="openModal">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Contacts</a>
+        </nav>
+        </div>
+        <div class="short-description">
+                <div class="description"><h3>Junior Fullstack Developer</h3>
+                <h1>Hello, my name is Alina Dogaru</h1>
+                <p>
+                  As a Junior Full Stack Developer currently enrolled in a comprehensive course, I am gaining hands-on experience in both
+                  front-end and back-end technologies. I collaborate on projects to build dynamic web applications, ensuring seamless user
+                  experiences and robust functionality. My training includes mastering languages like HTML, CSS, JavaScript, React,
+                  Node.js and React Native.
+                </p></div>
+                <div class="header-images">
+                      <img class="yellow" src="./images/dogaru-alina.jpg" alt="Alina Dogaru">
+               </div>
+          </div>
+        <div>
+          
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+             <div class="modal-left"><h3 class="modal-title">About me</h3>
+             <p>My recently discovered passion for web development drives me to deepen my extensive knowledge in this IT field. During
+            the Fullstack Developer course, I have gained practical experience in technologies such as HTML, CSS, JavaScript,
+            version control with GitHub, and Node.js dependencies. I’m excited about my new passion and eager to put my new skills
+            into practice.</p>
+          <a  class="mail" href="mailto:alina.elena_dogaru@yahoo.com">&#9993</a>
+
+          
+          </div>
+            <div class="modal-right">
+                          <img class="modal-img" src="./images/foto-modal1x.jpg"
+                            srcset="./images/foto-modal1x.jpg 1x, ./images/foto-modal2x.jpg 2x" alt="Modal foto">
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2 id="projects">Projects</h2>
+
+
+        <div>
+          <div class="project-element">
+           <div class="left-side">
+              <h3 class="project-title">
+            Web Studio
+              </h3>
+              <p class="about-project">
+            I created this project using HTML and CSS to showcase the skills I have acquired in these technologies.
+             </p>
+           <a class="project-link"  href="https://alinaelenadogaru.github.io/goit-markup-hw-07/"  target="_blank" >View project</a>
+          </div>
+          <div class="right-side">
+            <img class="project-img" src="./images/webstudio1x.jpg" srcset="./images/webstudio1x.jpg 1x, ./images/webstudio2x.jpg 2x" alt="Web Studio">
+            </div>
+          </div>
+
+
+          <div class="project-element">
+            <div class="right-side">
+                        <img class="project-img" src="./images/watch1x.jpg" srcset="./images/watch1x.jpg 1x, ./images/watch2x.jpg 2x"
+                          alt="The watch spot">
+
+            </div>
+<div class="left-side">
+  <h3 class="project-title">
+The Watch Spot  </h3>
+  <p class="about-project">
+My role in this HTML and CSS team project for the GoIT Romania course was team leader.  </p>
+  <a class="project-link" href="https://alinaelenadogaru.github.io/team-project/" target="_blank">View project</a>
+</div>
+          </div>
+
+
+          <div class="project-element">
+<div class="left-side">
+  <h3 class="project-title">
+Filmoteka  </h3>
+  <p class="about-project">
+For this team project, I contributed to the implementation of functionalities using JavaScript.  </p>
+  <a class="project-link" href="https://madalina192003.github.io/Team-project-filmoteka/" target="_blank">View project</a>
+</div>
+<div class="right-side">
+  <img class="project-img" src="./images/filmoteka1x.jpg" width="487.5" height="524"
+    srcset="./images/filmoteka1x.jpg 1x, ./images/filmoteka2x.jpg 2x" alt="Filmoteka">
+</div>
+          </div>
+
+
+        </div>
+      </main>
+
+      <footer>
+
+<p class="text"> Alina Dogaru 2024</p>
+      </footer>
   </body>
 </html>

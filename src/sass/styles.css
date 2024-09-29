@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2196F3;
+    --black: #212121;
+    --grey: #757575;
+    --white: #FFFFFF;
+    --button-grey: #F5F4FA;
+    --normal-font-size: 14px;
+    --middle-font-size: 16px;
+    --main-font: "Roboto Slab", sans-serif;
+}
+
+body {
+margin: 0 auto;
+    font-family: var(--main-font);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+text-decoration: none;
+margin-right: 100px;
+color: #212121;
+z-index: 2;
+position: relative;
+}
+header {
+    background-color: #fdc435;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+
+.yellow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.6;
+}
+.short-description {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    
+
+}
+.description {
+    max-width: 400px;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+
+
+h1 {
+    font-family: var(--main-font);
+    font-size: 56px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+h2 {
+    font-size: 36px;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #fdc435;
+        
+}
+h3 {
+    font-size: 30px;
+}
+.project-link {
+    display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #fdc435;
+        /* Verde */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+        /* Ajustează valoarea pentru colțuri mai rotunjite */
+        
+        border-width: 1px;
+        cursor: pointer;
+        margin-bottom: 20px;
+}
+.project-link:hover {
+    box-shadow: 0 5px 10px 1px rgba(253, 196, 53, 0.5);
+}
+.project-element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 50px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+}
+.project-element:hover {
+                box-shadow: 0 5px 10px 1px rgba(253, 196, 53, 0.5);
+}
+.left-side {
+    max-width: 400px;
+    justify-content: center;
+    margin-left: 20px;
+    
+}
+
+.project-title {
+                   margin-bottom: 30px;
+                   
+                }
+.about-project {
+    margin-bottom: 30px;
+}
+.project-img {
+    border-radius: 10px;
+    opacity: 0;
+        transition: opacity 3s ease-in-out;
+}
+.project-img.animate {
+    opacity: 1;
+}
+.project-img:hover {
+        box-shadow: 0 5px 20px 1px rgba(253, 196, 53, 0.5);
+
+
+}
+
+/* Stiluri pentru fereastra modală */
+.modal {
+    display: none;
+    /* Ascunsă implicit */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdc435;
+}
+span {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+.modal-left {
+    max-width: 40%;
+    margin-right: 20px;
+}
+.modal-title {
+    margin-bottom: 30px;
+}
+.modal-img {
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fdc435;
+    height: 200px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+ align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }}
