@@ -225,12 +225,10 @@ footer {
  left: 5%;
 }
 @media screen and (max-width: 906px) {
-    body {
-        margin: 0;
-    }
+   
   nav {
-
     display: flex;
+    justify-content: center;
   }
     .name {
         display: none;
