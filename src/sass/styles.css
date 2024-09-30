@@ -102,7 +102,6 @@ h3 {
         border-width: 1px;
         cursor: pointer;
         margin-bottom: 20px;
-
 }
 .project-link:hover {
     box-shadow: 0 5px 10px 1px rgba(253, 196, 53, 0.5);
@@ -176,8 +175,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:#fdc435;   
-    flex-wrap: wrap;
+    background-color: #fdc435;
 }
 span {
     position: absolute;
@@ -192,8 +190,7 @@ span {
     margin-bottom: 30px;
 }
 .modal-img {
-    border-radius: 50%;
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
 }
 
 .close {
@@ -213,31 +210,14 @@ span {
 footer {
     background-color: #fdc435;
     height: 200px;
-    position: relative;
 }
 
 .text {
     display: flex;
     justify-content: center;
  align-items: flex-end;
- position: absolute;
- top: 80%;
- left: 5%;
 }
-@media screen and (max-width: 906px) {
-   
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-    .name {
-        display: none;
-    }
-    .second-element {
-        flex-wrap: wrap-reverse;
-    }
-    .project-element {
-            box-shadow: 2px 2px 2px 3px rgba(253, 196, 53, 0.5);
-            max-width: 85%;
-        }
-}
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }}
