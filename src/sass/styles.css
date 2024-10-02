@@ -20,6 +20,7 @@
 body {
 margin: 0 auto;
     font-family: var(--main-font);
+background-image: linear-gradient(120deg, rgba(161, 196, 253, 0.5) 0%, rgba(194, 233, 251, 0.5) 100%);
 }
 img {
     display: block;
@@ -49,12 +50,15 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    opacity: 0.6;
+    opacity: 0.5;
+    display: block;
+        max-width: 100%;
+        height: auto;
 }
 .short-description {
     display: flex;
     flex-wrap:wrap-reverse;
-    
+    z-index: 5;
 
 }
 .description {
@@ -105,6 +109,7 @@ h3 {
 }
 .project-link:hover {
     box-shadow: 0 5px 10px 1px rgba(253, 196, 53, 0.5);
+    
 }
 .project-element {
     display: flex;
@@ -117,9 +122,10 @@ h3 {
             margin-left: auto;
             margin-right: auto;
             border-radius: 10px;
+            background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
 }
 .project-element:hover {
-                box-shadow: 0 5px 10px 1px rgba(253, 196, 53, 0.5);
+                    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 .left-side {
     max-width: 400px;
@@ -138,15 +144,48 @@ h3 {
 .project-img {
     border-radius: 10px;
     opacity: 0;
-        transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
 }
 .project-img.animate {
     opacity: 1;
 }
 .project-img:hover {
-        box-shadow: 0 5px 20px 1px rgba(253, 196, 53, 0.5);
+    box-shadow: 0 5px 20px 1px rgba(253, 196, 53, 0.5);
 
 
+}
+
+.contact-box {
+    
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-content: center;
+   margin-bottom: 20px;
+background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+}
+
+.contact-box a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.contacts-div {
+    display: flex;
+}
+.contact-box:hover {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+    /* LinkedIn blue */
 }
 
 /* Stiluri pentru fereastra modală */
@@ -173,9 +212,14 @@ h3 {
     width: 80%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #fdc435;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #fdc435;
+        perspective: 1000px;
+        background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
 }
 span {
     position: absolute;
@@ -183,15 +227,20 @@ span {
     right: 10px;
 }
 .modal-left {
-    max-width: 40%;
+    width: 50%;
     margin-right: 20px;
 }
 .modal-title {
     margin-bottom: 30px;
 }
 .modal-img {
-    border-radius: 20px;
+    border-radius: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ .modal-img:hover {
+     transform: translateZ(30px);
+     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+ }
 
 .close {
     color: #aaa;
@@ -210,14 +259,54 @@ span {
 footer {
     background-color: #fdc435;
     height: 200px;
+    position: relative;
 }
 
+
 .text {
-    display: flex;
-    justify-content: center;
- align-items: flex-end;
+        position: absolute;
+        top: 80%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(to bottom, gold 50%, transparent 50%);
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        transition: background-position .5s ease-in-out;
+        width: 20%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 26px;
+        border-radius: 10px;
+        color: antiquewhite;
 }
+
+.text:hover {
+    background-position: 0% 100%;
+        transition: background-position .5s ease-in-out;}
 @media screen and (max-width: 768px) {
     body {
         margin: 0;
-    }}
+    }
+.name {
+    display: none;
+}
+nav a {
+margin-right: 50px;
+}
+.project-element {
+    width: 90%;
+}
+.modal-left {
+    width: 80%;
+}
+.watch {
+    flex-wrap: wrap-reverse;
+}
+.project-img {
+    margin-bottom: 20px;
+}
+.project-title {
+    margin-top: 20px;
+}
+}
